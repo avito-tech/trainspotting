@@ -8,7 +8,6 @@ lint:
 	python -m mypy trainspotting/ tests/
 
 amaze:
-	python -V && \
 	python -m isort trainspotting/ tests/ && \
 	python -m add_trailing_comma $(FILES) && \
 	python -m black trainspotting/ tests/ && \
