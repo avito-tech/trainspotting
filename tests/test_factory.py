@@ -3,6 +3,7 @@ from typing import Optional, get_type_hints
 from unittest.mock import patch
 
 import pytest
+
 from trainspotting.factory import (
     EnvField,
     FieldException,

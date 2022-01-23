@@ -1,0 +1,35 @@
+[tool.black]
+line-length = 99
+skip-string-normalization = true
+target-version = ['py36', 'py37', 'py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | generated
+)/
+'''
+
+[tool.isort]
+line_length = 99
+atomic = true
+combine_as_imports = true
+default_section = 'THIRDPARTY'
+force_grid_wrap = 3
+include_trailing_comma = true
+src_paths = ['trainspotting', 'tests']
+multi_line_output = 3
+
+[tool.pystyle]
+# включает авто добавление замыкающей(trailing) запятой в последовательностях при форматировании
+add_trailing_comma = false
+

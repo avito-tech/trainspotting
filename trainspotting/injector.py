@@ -87,7 +87,9 @@ class DependencyInjector:
                     continue
 
                 if not match_interface(
-                    provided_obj, provider, strict_validation=self.strict_validation
+                    provided_obj,
+                    provider,
+                    strict_validation=self.strict_validation,
                 ):
                     raise InjectionError(f'{provided_obj} does not realize {provider} interface')
 
@@ -100,7 +102,9 @@ class DependencyInjector:
                     continue
 
                 if not match_interface(
-                    provided_obj, provider, strict_validation=self.strict_validation
+                    provided_obj,
+                    provider,
+                    strict_validation=self.strict_validation,
                 ):
                     raise InjectionError(f'{provided_obj} does not realize {provider} interface')
 

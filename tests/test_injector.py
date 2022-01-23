@@ -7,6 +7,7 @@ from typing import (
 from unittest.mock import patch
 
 import pytest
+
 from trainspotting import InjectionError
 from trainspotting.factory import EnvField, factory
 
