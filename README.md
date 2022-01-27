@@ -232,3 +232,7 @@ injector = DependencyInjector({
 
 injector.inject(main)()  # prints: did something
 ```
+
+
+### License
+`MIT license. Copyright (c) 2022 Avito`
